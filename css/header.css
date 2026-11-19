@@ -1,0 +1,99 @@
+.header {
+   display: flex;
+   align-items: stretch;
+   justify-content: space-between;
+   border-bottom: 0.5px solid #000000
+}
+.nav__logo {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   text-decoration: none;
+   padding-left: 40px;
+}
+.header__toggle {
+   display: none;
+}
+.nav__links {
+   display: block;
+}
+.nav__inner {
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: 1fr;
+   height: 100%;
+}
+.menu {
+}
+.nav__link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0.75rem 2.5rem;
+   border-left: 0.5px solid #000;
+   font-size: 14px;
+   font-family: "Roboto", Arial, sans-serif;
+   text-decoration: none;
+}
+.nav__link:hover {
+   background-color: #f2f2f2;
+}
+.nav__link--cta {
+   background-color: #000;
+   color: #fff;
+}
+.nav__link--cta:hover {
+   background-color: #333;
+}
+
+@media screen and (max-width: 1199px){
+   .nav__link {
+      padding: 0.75rem 1.25rem;
+   }
+}
+
+@media screen and (max-width: 767px){
+   .header {
+      flex-wrap: wrap;
+   }
+   .header__toggle {
+      display: flex;
+      align-items: center;
+      padding: 0.75rem 1.25rem;
+      border: 0;
+      border-left: 0.5px solid #000;
+      background: none;
+      font-family: "Roboto", Arial, sans-serif;
+      font-size: 15px;
+      cursor: pointer;
+   }
+   .header__toggle::before {
+      content: "Menu";
+   }
+   .header__toggle[aria-expanded="true"]::before {
+      content: "Close";
+   }
+   .nav__links {
+      display: grid;
+      grid-template-rows: 0fr;
+      flex-basis: 100%;
+      border-top: 0 solid #000;
+      transition: grid-template-rows 0.35s ease;
+   }
+   .header.is-open .nav__links {
+      grid-template-rows: 1fr;
+      border-top: 0.5px solid #000;
+   }
+   .nav__inner {
+      display: grid;
+      grid-auto-flow: row;
+      grid-auto-columns: auto;
+      overflow: hidden;
+      min-height: 0;
+   }
+   .nav__link {
+      padding: 1.25rem 1rem;
+      border-left: 0;
+   }
+}

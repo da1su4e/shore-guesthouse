@@ -1,0 +1,44 @@
+/* NULL CSS */
+@import url(null.css);
+/* HEADER STYLE */
+@import url(header.css);
+/* FOOTER STYLE */
+@import url(footer.css);
+@import url(main.css);
+/* ---------------------- */
+body {
+   font-family: "EB Garamond", serif;
+   color: #000000;
+   font-size: 48px;
+}
+/* -------------------------- */
+.wrapper {
+   min-height: 100vh;
+   overflow: clip;
+
+   display: flex;
+   flex-direction: column;
+}
+/* -------------------------- */
+.page {
+   flex: 1 1 auto;
+}
+/* ----------------- */
+[class*="__container"] {
+   max-width: 1200px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+[class*="__title"] {
+   font-size: 16px;
+   line-height: 110%;
+   letter-spacing: -2%;
+}
+[class*="__a"] {
+   line-height: 110%;
+   letter-spacing: -2%;
+   color: #0075FF;
+   text-decoration: underline;
+   text-decoration-thickness: 2px;
+   cursor: pointer;
+}

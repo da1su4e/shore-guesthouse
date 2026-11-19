@@ -1,0 +1,71 @@
+.footer {
+   background-color: #000;
+   color: #fff;
+}
+.footer__container {
+   display: flex;
+   flex-direction: column;
+   padding: 2.5rem 15px 1.5rem;
+}
+.footer__logo {
+   display: inline-block;
+   align-self: flex-start;
+   padding-bottom: 1.25rem;
+   margin-bottom: 1.25rem;
+   position: relative;
+   font-size: 16px;
+   text-decoration: none;
+}
+.footer__logo::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 2rem;
+   height: 1px;
+   background-color: #fff;
+}
+.footer__copyright, .footer__contacts {
+   font-family: "Roboto", Arial, sans-serif;
+   font-size: 0.875rem;
+   line-height: 1.6;
+}
+.footer__contacts {
+   font-style: normal;
+}
+.footer__contacts a {
+   display: block;
+   color: #fff;
+   text-decoration: none;
+}
+.footer__contacts a[href^="mailto"] {
+   text-decoration: underline;
+}
+.footer__bottom {
+   margin-top: auto;
+   padding-top: 1rem;
+   border-top: 1px solid #666;
+}
+.footer__top {
+   margin-bottom: 5rem;
+}
+.footer__social {
+   display: flex;
+   gap: 1rem;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.footer__social-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 1.75rem;
+   height: 1.75rem;
+   color: #fff;
+   font-size: 1rem;
+   transition: opacity 0.2s;
+}
+.footer__social-link:hover {
+   opacity: 0.6;
+}
