@@ -115,31 +115,6 @@
    flex-direction: column;
    gap: 10px;
 }
-@media screen and (max-width: 1199px){
-   .neighbourhood {
-      padding: 0 15px;
-   }
-   .neighbourhood .neighbourhood__container {
-      padding-inline: 0;
-   }
-}
-
-@media screen and (max-width: 767px) {
-   .page__h1 {
-      font-size: 63px;
-      margin-top: 50px;
-   }
-   .split {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-   }
-   .option {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-   }
-}
 .cta {
    position: relative;
    isolation: isolate;
@@ -182,6 +157,12 @@
    .cta {
       height: 33rem;
    }
+   .neighbourhood {
+      padding: 0 15px;
+   }
+   .neighbourhood .neighbourhood__container {
+      padding-inline: 0;
+   }
 }
 @media screen and (max-width: 767px) {
    .cta {
@@ -189,5 +170,19 @@
    }
    .cta__image {
       object-position: 70% center;
+   }
+   .page__h1 {
+      font-size: 63px;
+      margin-top: 50px;
+   }
+   .split {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+   .option {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
    }
 }

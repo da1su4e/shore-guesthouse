@@ -1,0 +1,362 @@
+.page__h1 {
+   font-size: 80px;
+   line-height: 110%;
+   letter-spacing: -2%;
+   margin: 150px 0 40px 0;
+}
+.hero {
+   position: relative;
+   isolation: isolate;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 37.5rem;
+   color: #fff;
+   text-align: center;
+   z-index: 1;
+}
+.hero__image {
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   z-index: -2;
+}
+.hero::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-color: rgba(0, 0, 0, 0.35);
+   z-index: -1;
+}
+.hero__container {
+   width: 100%;
+}
+.hero__heading {
+   margin: 0;
+}
+.exterior {
+   margin: 150px 0;
+}
+.exterior__container {
+   display: flex;
+   flex-direction: column;
+   gap: 100px;
+}
+.exterior__content {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   text-align: center;
+}
+.exterior__photos {
+   display: flex;
+   flex-direction: column;
+   gap: 100px;
+}
+.photos__group {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 0 62px;
+}
+.photos__group figure {
+   margin: 0;
+   width: max-content;
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.photos__group figcaption {
+   width: 0;
+   min-width: 100%;
+   overflow-wrap: break-word;
+   font-size: 16px;
+}
+.photos__group figure:first-child {
+   justify-self: start;
+}
+
+.photos__group figure:last-child {
+   justify-self: end;
+}
+.exterior__photos figure {
+   margin: 0;
+   width: max-content;
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.exterior__photos figcaption {
+   width: 0;
+   min-width: 100%;
+   overflow-wrap: break-word;
+   font-size: 16px;
+}
+.interior {
+   background-color: #2F3344;
+   padding: 150px 0;
+}
+.interior__container {
+   display: flex;
+   flex-direction: column;
+   gap: 100px;
+}
+.interior__content {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   text-align: center;
+   color: #fff;
+}
+.interior__title {
+}
+.interior__heading {
+}
+.interior__swiper {
+   display: flex;
+   flex-direction: column;
+   gap: 120px;
+}
+.interior__gallery {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   gap: 48px;                      /* відстань кнопка-фото */
+}
+
+.interior__gallery .main {
+   flex: 0 1 56rem;                /* ширина фото, підбери за макетом */
+   min-width: 0;                   /* без цього Swiper розпирає блок */
+}
+
+.main .swiper-slide {
+   display: flex;
+   justify-content: center;
+}
+
+.main figure {
+   margin: 0;
+   width: 100%;
+}
+
+.main img {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.gallery-prev,
+.gallery-next {
+   padding: 0.75rem 1.5rem;
+   border: 0.5px solid #fff;
+   border-radius: 999px;
+   background: none;
+   color: #fff;
+   font-family: "Roboto", Arial, sans-serif;
+   font-size: 0.875rem;
+   cursor: pointer;
+   transition: background-color 0.2s;
+}
+
+.gallery-prev:hover,
+.gallery-next:hover {
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* неактивна кнопка (на першому/останньому слайді, якщо loop вимкнено) */
+.gallery-prev.swiper-button-disabled,
+.gallery-next.swiper-button-disabled {
+   opacity: 0.4;
+   cursor: default;
+}
+
+/* мініатюри по центру */
+.thumbs {
+   width: 100%;
+   max-width: 26rem;
+   margin: 0 auto;
+}
+.thumbs .swiper-slide {
+   padding: 0;
+   background-color: transparent;
+   cursor: pointer;
+   transition: padding 0.2s, background-color 0.2s, transform 0.2s;
+}
+.thumbs {
+   overflow: visible;
+}
+.thumbs .swiper-slide-thumb-active {
+   padding: 0.5rem;
+   background-color: #e4cdaa;      /* бежевий, візьми піпеткою з Figma */
+}
+.thumbs .swiper-slide:hover {
+   transform: rotate(-4deg);
+}
+.thumbs .swiper-slide:nth-child(even):hover {
+   transform: rotate(4deg);
+}
+.thumbs img {
+   display: block;
+   width: 100%;
+   aspect-ratio: 1 / 1;
+   object-fit: cover;
+}
+.main figcaption {
+   color: #fff;
+   font-size: 0.875rem;
+}
+.swiper-slide figure {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.swiper-slide figcaption {
+   font-size: 16px;
+}
+.neighborhood {
+   margin: 150px 0 100px 0;
+}
+.neighborhood__container {
+   display: flex;
+   flex-direction: column;
+   gap: 100px;
+}
+.neighborhood__content {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   text-align: center;
+}
+.neighborhood__carousel {
+   display: flex;
+   overflow: hidden;
+}
+.neighborhood__carousel::-webkit-scrollbar {
+   display: none;
+}
+.carousel__group {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+   gap: 64px;
+   animation: spin 30s linear infinite;
+   padding-right: 64px;
+}
+.neighborhood__carousel {
+   display: flex;
+   overflow: hidden;
+}
+
+.neighborhood .card {
+   flex-shrink: 0;
+   width: 488px;
+}
+
+.neighborhood .card__image {
+   display: block;
+   width: 100%;
+   height: 406px;
+   aspect-ratio: 3 / 4;
+   object-fit: cover;
+}
+.image {
+   margin-bottom: 150px;
+}
+@keyframes spin {
+   from {
+      translate: 0;
+   }
+   to {
+      translate: -100%
+   }
+}
+.cta {
+   position: relative;
+   isolation: isolate;
+   height: 33.625rem;
+   padding-top: 2rem;
+   color: #fff;
+   margin-top: 64px;
+}
+.cta__image {
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   z-index: -2;
+}
+.cta::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-color: rgba(0, 0, 0, 0.3);
+   z-index: -1;
+}
+.cta__button {
+   display: inline-block;
+   padding: 0.75rem 1.5rem;
+   border-radius: 999px;
+   background-color: #fff;
+   color: #000;
+   font-family: "Roboto", Arial, sans-serif;
+   font-size: 0.875rem;
+   text-decoration: none;
+   transition: background-color 0.2s;
+}
+.cta__button:hover {
+   background-color: #e6e6e6;
+}
+@media screen and (max-width: 1199px){
+   .exterior__photos {
+      align-items: center;
+   }
+   .photos__group {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+   }
+   .cta {
+      height: 33rem;
+   }
+}
+@media screen and (max-width: 767px) {
+   .page__h1 {
+      font-size: 63px;
+      margin-top: 50px;
+   }
+
+   .exterior {
+      margin-top: 70px;
+   }
+
+   .interior__swiper {
+      flex-direction: column-reverse;   /* мініатюри вниз */
+      gap: 50px;
+   }
+
+   .interior__gallery .main {
+      flex: 1 1 100%;                   /* фото на всю ширину */
+   }
+
+   .gallery-prev,
+   .gallery-next {
+      display: none;
+   }
+   .cta {
+      height: 32.25rem;
+   }
+   .cta__image {
+      object-position: 70% center;
+   }
+}

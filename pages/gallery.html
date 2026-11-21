@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?family=EB+Garamond:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+   />
+   <link rel="stylesheet" href="../css/gallery.css">
+   <link rel="stylesheet" href="../css/style.css">
+   <title>Gallery</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <a href="../index.html" class="nav__logo">Shore Guesthouse</a>
+
+         <button class="header__toggle" type="button" aria-expanded="false" aria-controls="nav"></button>
+
+         <nav class="nav__links menu" id="nav">
+            <div class="nav__inner">
+               <a href="#" class="nav__link">Gallery</a>
+               <a href="information.html" class="nav__link">Information</a>
+               <a href="soon.html" class="nav__link nav__link--cta">Book now</a>
+            </div>
+         </nav>
+      </header>
+      <main class="page">
+         <section class="title">
+            <div class="title__container">
+               <h1 class="page__h1">Gallery</h1>
+            </div>
+         </section>
+         <section class="hero">
+            <picture>
+               <source media="(max-width: 767px)" srcset="../img/gallery/gallery-phone.jpg">
+               <source media="(max-width: 1199px)" srcset="../img/gallery/gallery-tablet.jpg">
+               <img class="hero__image" src="../img/gallery/gallery-desktop.jpg" alt="View of the sea from a whitewashed terrace in Santorini" loading="lazy">
+            </picture>
+            <div class="hero__container">
+               <h1 class="hero__heading reveal">Experience Shore Guesthouse. Explore our gallery and start planning.</h1>
+            </div>
+         </section>
+         <section class="exterior">
+            <div class="exterior__container">
+               <div class="exterior__content">
+                  <h2 class="exterior__title">Exterior Views</h2>
+                  <p class="exterior__heading">Welcome to Shore Guesthouse.</p>
+               </div>
+               <div class="exterior__photos">
+                  <div class="photos__group">
+                     <figure class="reveal reveal--up">
+                        <picture>
+                           <source media="(max-width: 767px)" srcset="../img/gallery/bedroom-mobile.jpg">
+                           <img src="../img/gallery/bedroom.jpg" alt="">
+                        </picture>
+                        <figcaption>A haven lies behind the blue door.</figcaption>
+                     </figure>
+                     <figure class="reveal reveal--up">
+                        <picture>
+                           <source media="(max-width: 767px)" srcset="../img/gallery/lounge-mobile.jpg">
+                           <img src="../img/gallery/lounge.jpg" alt="">
+                        </picture>
+                        <figcaption>The Lounge Room</figcaption>
+                     </figure>
+                  </div>
+                  <figure class="reveal reveal--up">
+                     <picture>
+                        <source media="(max-width: 767px)" srcset="../img/gallery/outer-mobile.jpg">
+                        <img src="../img/gallery/outer.jpg" alt="">
+                     </picture>
+                     <figcaption>The Outer Deck</figcaption>
+                  </figure>
+               </div>
+            </div>
+         </section>
+         <section class="interior">
+            <div class="interior__container">
+               <div class="interior__content">
+                  <h2 class="interior__title">Interior Views</h2>
+                  <p class="interior__heading">Uncover the  guesthouse’s charm and character.</p>
+               </div>
+               <div class="interior__swiper">
+                  <div class="swiper thumbs">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/gallery/swiper/thumbs/thumb-1.svg" alt="Oia domes above the sea"></div>
+                        <div class="swiper-slide"><img src="../img/gallery/swiper/thumbs/thumb-2.svg" alt="Blue door with flowers"></div>
+                        <div class="swiper-slide"><img src="../img/gallery/swiper/thumbs/thumb-3.svg" alt="Terrace steps by the sea"></div>
+                        <div class="swiper-slide"><img src="../img/gallery/swiper/thumbs/thumb-4.svg" alt="Canopy bed"></div>
+                     </div>
+                  </div>
+                  <div class="interior__gallery">
+                     <button class="gallery-prev" type="button">Previous</button>
+   
+                     <div class="swiper main">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <figure>
+                                 <picture>
+                                    <source media="(max-width: 1199px)" srcset="../img/gallery/swiper/swiper-mobile-1.jpg">
+                                    <img src="../img/gallery/swiper/swiper-1.jpg" alt="">
+                                 </picture>
+                                 <figcaption>Explore the twisting and charming streets</figcaption>
+                              </figure>
+                           </div>
+                           <div class="swiper-slide">
+                              <figure>
+                                 <picture>
+                                    <source media="(max-width: 1199px)" srcset="../img/gallery/swiper/swiper-mobile-2.jpg">
+                                    <img src="../img/gallery/swiper/swiper-2.jpg" alt="">
+                                 </picture>
+                                 <figcaption>Enter through a private entrance</figcaption>
+                              </figure>
+                           </div>
+                           <div class="swiper-slide">
+                              <figure>
+                                 <picture>
+                                    <source media="(max-width: 1199px)" srcset="../img/gallery/swiper/swiper-mobile-3.jpg">
+                                    <img src="../img/gallery/swiper/swiper-3.jpg" alt="">
+                                 </picture>
+                                 <figcaption>Enjoy the stunning views</figcaption>
+                              </figure>
+                           </div>
+                           <div class="swiper-slide">
+                              <figure>
+                                 <picture>
+                                    <source media="(max-width: 1199px)" srcset="../img/gallery/swiper/swiper-mobile-4.jpg">
+                                    <img src="../img/gallery/swiper/swiper-4.jpg" alt="">
+                                 </picture>
+                                 <figcaption>Sink into the plush comfort of the canopy bed.</figcaption>
+                              </figure>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="gallery-next" type="button">Next</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="neighborhood">
+            <div class="neighborhood__container">
+               <div class="neighborhood__content">
+                  <h2 class="neighborhood__title">The Neighborhood</h2>
+                  <p class="neighborhood__heading">Wander its winding streets and soak in the magic.</p>
+               </div>
+               <div class="neighborhood__carousel">
+                  <div class="carousel__group">
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-1.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-2.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-3.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-4.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-5.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-6.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                  </div>
+                  <div aria-hidden class="carousel__group">
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-1.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-2.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-3.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-4.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-5.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                     <div class="card">
+                        <img
+                           class="card__image"
+                           src="../img/gallery/neighborhood-6.jpg"
+                           alt="Bedroom"
+                        >
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="image">
+            <img src="../img/gallery/image.jpg" alt="">
+         </section>
+         <section class="cta">
+            <picture>
+               <source media="(max-width: 767px)" srcset="../img/gallery/cta-phone.jpg">
+               <source media="(max-width: 1199px)" srcset="../img/gallery/cta-tablet.jpg">
+               <img class="cta__image" src="../img/gallery/cta-desktop.jpg" alt="View of the sea from a whitewashed terrace in Santorini" loading="lazy">
+            </picture>
+            <div class="cta__container">
+               <h2 class="cta__title">Plan Your Dream Getaway:</h2>
+               <p class="cta__heading">Summer 2025 Dates Available</p>
+               <a href="pages/soon.html" class="cta__button">Book now</a>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__top">
+               <a href="../index.html" class="footer__logo">Shore Guesthouse</a>
+
+               <p class="footer__copyright">© 2025 All Rights Reserved</p>
+               <address class="footer__contacts">
+                  <a href="mailto:hello@figma.com">hello@figma.com</a>
+                  <a href="tel:+16465554567">(646) 555-4567</a>
+               </address>
+            </div>
+
+            <div class="footer__bottom">
+               <ul class="footer__social">
+                  <li><a href="#" class="footer__social-link" aria-label="YouTube"><i class="fa-brands fa-facebook-f" style="color: rgb(255, 255, 255);"></i></a>
+                  </li>
+                  <li><a href="#" class="footer__social-link" aria-label="YouTube"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><a href="#" class="footer__social-link" aria-label="YouTube"><i class="fa-brands fa-tiktok" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><a href="#" class="footer__social-link" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color: rgb(255, 255, 255);"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   <script src="../js/swiper-init.js"></script>
+   <script src="../js/script.js"></script>
+</body>
+</html>
