@@ -4,7 +4,6 @@
 @import url(header.css);
 /* FOOTER STYLE */
 @import url(footer.css);
-@import url(main.css);
 /* ---------------------- */
 body {
    font-family: "EB Garamond", serif;
@@ -26,7 +25,6 @@ body {
 /* ----------------- */
 [class*="__container"] {
    max-width: 1200px;
-   padding: 0 15px;
    margin: 0 auto;
 }
 [class*="__title"] {
@@ -41,4 +39,41 @@ body {
    text-decoration: underline;
    text-decoration-thickness: 2px;
    cursor: pointer;
+}
+[class*="__heading"] {
+   line-height: 1.2;
+}
+[class*="__paragraph"] {
+   font-size: 24px;
+   line-height: 1.3;
+   letter-spacing: -0.02em;
+}
+
+.reveal {
+   opacity: 0;
+   transition: opacity 0.8s ease-out;
+}
+.reveal.is-visible {
+   opacity: 1;
+}
+.reveal--up {
+   transform: translateY(2rem);
+   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal--up.is-visible {
+   transform: translateY(0);
+}
+@media screen and (max-width: 1199px){
+   [class*="__heading"], [class*="__a"] {
+      font-size: 39px;
+   }
+   [class*="__container"] {
+      padding: 0 15px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   [class*="__heading"], [class*="__a"] {
+      font-size: 28px;
+   }
 }
